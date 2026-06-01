@@ -1,0 +1,51 @@
+# NationsSMP Configuration
+
+# How many animals each player gets in their army
+army-size: 50
+
+# Army AI update interval in ticks (20 ticks = 1 second)
+army-ai-tick: 20
+
+# Army follow distance - if player is further than this, animals teleport to them
+army-follow-distance: 60
+
+# Army combat range - animals attack enemies within this range (in blocks)
+army-combat-range: 8
+
+# Army animal damage per hit
+army-damage: 5.0
+
+# Army animal health
+army-animal-health: 40.0
+
+# Animal companion health
+companion-health: 100.0
+
+# Animal companion damage
+companion-damage: 6.0
+
+# Obsidian sword timer in hours
+obsidian-sword-timer-hours: 50
+
+# Glitch warning intervals (hours before 50) when warnings are broadcast
+glitch-warning-hours: [45, 48, 49]
+
+# Glitch last-hour countdown intervals in minutes
+glitch-final-countdown-minutes: [30, 15, 5, 1]
+
+# Legendary item search radius for placement (chunks from world center)
+legendary-spawn-radius: 3000
+
+# Iron throne castle location (set by admin using /nsadmin spawncastle)
+# Leave 0,0,0 to have it auto-placed in The End when first player enters
+throne-location:
+  world: world_the_end
+  x: 0
+  y: 0
+  z: 0
+
+# Messages prefix
+prefix: "&8[&6NationsSMP&8] "
+
+# Broadcast prefix for big server events
+broadcast-prefix: "&4&l[WAR HORN] "

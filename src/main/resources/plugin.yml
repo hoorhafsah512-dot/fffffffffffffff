@@ -1,0 +1,56 @@
+name: NationsSMP
+version: 1.0.0
+main: com.nationssmp.NationsSMP
+api-version: 1.21
+authors: [NationsSMP]
+description: The ultimate nations SMP plugin with armies, oaths, legends and war.
+
+commands:
+  nation:
+    description: View nation info or manage your nation
+    usage: /nation <info|animals>
+    permission: nationssmp.player
+  givebots:
+    description: Give your bots and everything to another nation before death
+    usage: /givebots <nationName>
+    permission: nationssmp.player
+  nsadmin:
+    description: Admin tools
+    usage: /nsadmin <spawnitems|resetglitch|resetthrone|spawncastle|listlands>
+    permission: nationssmp.admin
+  bookcommand:
+    description: Use the Book of Command to kill a player
+    usage: /bookcommand <playerName>
+    permission: nationssmp.player
+  summondragon:
+    description: Summon the dragon if you own the Iron Throne
+    usage: /summondragon
+    permission: nationssmp.player
+  I:
+    description: Swear an oath - /I BEAR OATH TO <player> <title> OF <nation>
+    usage: /I BEAR OATH TO <player> <title> OF <nation>
+    permission: nationssmp.player
+  war:
+    description: Declare or manage wars between nations
+    usage: /war <declare|peace|status|list> [nation]
+    permission: nationssmp.player
+  leaderboard:
+    description: View server leaderboards
+    usage: /leaderboard [dragons|land|kills]
+    permission: nationssmp.player
+  treasury:
+    description: Manage your nation treasury
+    usage: /treasury [balance|deposit <n>|withdraw <n>]
+    permission: nationssmp.player
+  throne:
+    description: View Iron Throne ownership history
+    usage: /throne [history]
+    permission: nationssmp.player
+
+permissions:
+  nationssmp.player:
+    description: Standard player permission
+    default: true
+  nationssmp.admin:
+    description: Admin permission
+    default: op
